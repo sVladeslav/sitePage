@@ -384,3 +384,101 @@ hr{
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+
+
+    .headerImageFullWidth{
+        display: none;
+    }
+
+    .positionContent{
+        max-width: 100vw;
+    }
+
+    .mainContent{
+        min-width: 320px;
+    }
+
+    .containerHeader{
+        height: 50px;
+    }
+
+    .newPostButton{
+        right: 10%;
+        left: 10%;
+        font-size: 15px;
+    }
+
+    .infoContact{
+        position: absolute;
+        left: -300px;
+        transition-property: left;
+        transition-duration: 1s;
+        z-index: 10000;
+    }
+
+    label{
+        display: inline-block;
+        margin-right: 50px;
+        width: 40px;
+        position: absolute;
+        left: 10%;
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+
+    hr{
+       display: none;
+    }
+
+    .postNavigationItem{
+        font-size: 13px;
+        padding-bottom: 5px;
+    }
+
+    .postNavigationItemActive{
+        border-bottom: none;
+    }
+
+    a.linkDecorationNone + a.linkDecorationNone{
+        margin-left: 20px;
+    }
+
+    .main{
+        justify-content: center;
+    }
+
+    .posts{
+        justify-content: center;
+    }
+
+    .postNavigation{
+        justify-content: flex-end;
+        margin-top: 15px;
+    }
+
+    .showChange{
+        display: none;
+    }
+    #accountInfo:checked ~ .infoContact{
+        left: 0;
+    }
+
+
+    label.closeMenu{
+        z-index: 9999;
+        position: fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        width:100%;
+        background-color: rgba(0,0,0,0.2);
+        display: none;
+    }
+    #accountInfo:checked ~ .closeMenu{
+        display: block;
+    }
+}
