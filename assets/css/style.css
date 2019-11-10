@@ -79,6 +79,10 @@ body{
     right: 1%;
 }
 
+label{
+    display: none;
+}
+
 div.headerImage > img, div.headerImageFullWidth > img{
     height: 300px;
     width: 100%;
@@ -89,6 +93,7 @@ div.headerImage > img, div.headerImageFullWidth > img{
 .main{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .infoContact{
@@ -291,8 +296,9 @@ hr{
     display: flex;
     flex-direction: column;
     border: 2px solid #9A9A9A;
-    flex-basis: 350px;
+    flex-basis: 400px;
     margin-bottom: 20px;
+    /*box-sizing: border-box;*/
 }
 
 .userInfo{
@@ -322,6 +328,24 @@ hr{
 .onlineInfo{
     font-size: 15px;
     color: #9A9A9A;
+}
+
+.lifeStatus{
+    background-color: #F6F6F6;
+    border-radius: 30%;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: center;
+    padding: 0 15px;
+    margin-right: 5px;
+}
+
+.lifeStatus>img{
+    height:20px;
+}
+
+.lifeStatus + span{
+    cursor: pointer;
 }
 
 .marginTop20{
